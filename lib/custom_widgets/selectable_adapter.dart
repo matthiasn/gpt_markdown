@@ -322,4 +322,13 @@ class _RenderSelectableAdapter extends RenderProxyBox
     _geometry.dispose();
     super.dispose();
   }
+
+  @override
+  int get contentLength => selectionText.length;
+
+  @override
+  SelectedContentRange? getSelection() {
+    // TODO: implement getSelection properly
+    return null;
+  }
 }
